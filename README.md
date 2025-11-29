@@ -275,8 +275,11 @@ P.S. 注意事项: 如果使用uv方法安装，在安装后请不要移动serve
 
 - **openailiked服务选项**可以填写所有兼容openai格式的LLM服务, 您需要填写您的LLM服务供应商提供的URL, API Key, Model名称等信息。
 
-    - 示例: 火山引擎url填写为`https://ark.cn-beijing.volces.com/api/v3`
-
+    - 示例:火山引擎配置说明
+      1. **LLM BASE URL**: 请填写 `https://ark.cn-beijing.volces.com/api/v3`
+         注意：**切勿**在末尾添加 `/chat/completions` 或 `/responses`，插件会自动处理路径拼接。
+      2. **模型名称 (Model)**: 请必须填写 **Endpoint ID** (例如 `ep-20240604xxxx-xxxxx`)。
+         注意：**不要**填写模型名称（如 `doubao-pro-32k`），请前往火山引擎控制台“在线推理 -> 推理接入点”获取 ID。
 
 
 ## 第六步： 关于翻译选项
